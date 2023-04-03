@@ -1,3 +1,6 @@
-FROM tomcat:8.0.20-jre8
+From tomcat:8-jre8
 
-COPY target/01-maven-web-app*.war /usr/local/tomcat/webapps/maven-web-app.war
+
+MAINTAINER "amithputankar07@gmail.com"
+
+COPY ./webapp.war /usr/local/tomcat/webapps
